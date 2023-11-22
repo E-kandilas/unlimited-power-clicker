@@ -32,9 +32,9 @@ const EVIL_LAUGH_AUDIO = new Audio('assets/emperorlaugh.mp3');
 const handleImageClick = (e) => {
   let newHateVal;
   if (modifiers[0].qty === 0) {
-    newHateVal = window.data.hatred + 1000;
+    newHateVal = window.data.hatred + 1;
   } else {
-    newHateVal = window.data.hatred + (2 * modifiers[0].qty + 100000)
+    newHateVal = window.data.hatred + (2 * modifiers[0].qty)
   }
   handleHateChange(newHateVal);
 }
