@@ -1,0 +1,137 @@
+body {
+  background-image: url("assets/stars_bg.webp");
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  user-select: none;
+}
+
+#container {
+  width: 90vw;
+  height: 80vh;
+  max-width: 1920px;
+  max-height: 1080px;
+  font-family: Impact;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  align-self: center;
+  margin-top: -100px;
+}
+
+#the_senate_image {
+  width: 300px;
+  height: auto;
+  border-radius: 1000px;
+  object-fit: cover;
+  object-position: 100% 5px;
+  cursor: pointer;
+  z-index: 20;
+}
+
+#emperor {
+  width: 300px;
+  height: 380px;
+  border-radius: 1000px;
+  object-fit: cover;
+  object-position: 50% -40px;
+  cursor: pointer;
+  position: absolute;
+  margin-top: 108px;
+}
+
+#image_and_button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  font-size: 25px;
+  color: whitesmoke;
+}
+
+#control_panel {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  max-height: 100%;
+  flex-wrap: wrap;
+  /* align-items: center; */
+}
+
+.modifierButton, .producerButton {
+  font-size: 14px;
+  margin: 10px;
+  align-items: center;
+  padding: 3px;
+  cursor: pointer;
+  width: 140px;
+}
+
+.modifierButton {
+  background-color: transparent;
+  color: gold;
+  font-weight: bold;
+  border: none;
+}
+
+.locked {
+  filter: grayscale(100%);
+  pointer-events: none;
+  color: red;
+  cursor: not-allowed;
+}
+
+.quantity-badge {
+  position: absolute;
+  top: 0%;
+  right: 0%;
+  left: 50%;
+  bottom: 50%;
+  background-color: orange;
+  border-radius: 50%;
+  width: 1.5rem;
+  height: 1.5rem;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 15px;
+  margin-left: 10px;
+}
+
+.producerButton {
+  border: none;
+  background-color: transparent;
+  color: white;
+}
+
+#producer_container, #modifier_container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  max-height: 100%;
+}
+
+#modifier_container {
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+}
+
+.button-inner-container {
+  position: relative;
+}
+
+.power-button {
+  background-color: red;
+}
+
+.active-power {
+  background-color: #51d251;
+}
